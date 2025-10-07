@@ -4,7 +4,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
-import AboutUs from './components/AboutUs';
+import Aboutus from './components/Aboutus';
 import Computers from './components/Computers';
 import Mobiles from './components/Mobiles';
 import Laptops from './components/Laptops';
@@ -25,9 +25,9 @@ function App() {
     <BrowserRouter basename="/ecommerce">
       <Routes>
         <Route path="/" element={<HomePage />}>
-          <Route index element={<AboutUs />} />
+          <Route index element={<Aboutus />} />
           <Route path="home" element={<Home />} />
-          <Route path="about-us" element={<AboutUs />} />
+          <Route path="about-us" element={<Aboutus />} />
           <Route path="computers" element={<Computers />} />
           <Route path="mobiles" element={<Mobiles />} />
           <Route path="laptops" element={<Laptops />} />
